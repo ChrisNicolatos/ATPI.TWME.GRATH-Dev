@@ -1,0 +1,128 @@
+﻿Sample from existing script
+
+>OS YY SEMN/VESSEL-ALDEBARAN
+>RM*/V/ATH/CU30.00.01.0058/FALCON MANAGEMENT SERVICE
+>AP ATH 0030210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72;OS YY ATH 0030210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72
+>OS YY AFTER OFFICE HOURS TELEPHONE ATHENS GREECE 6945751724
+>TK TL15SEP
+>OP 19SEP/72
+>RU 1A HK1 ATH 07APR/RETAIN
+
+In new script:
+
+>RM*/V/ATH/CU30.00.01.0058/FALCON MANAGEMENT SERVICE
+ is replaced by
+>RM*GRACE/CLN/010058
+>RM*GRACE/CLA/FALCON MANAGEMENT SERVICE
+ if the customer has subdepartemnts this will be supplemented by
+>RM*GRACE/SBN/556
+>RM*GRACE/SBA/SEAGOING PERSONNEL
+
+
+>OS YY SEMN/VESSEL-ALDEBARAN
+ is replaced by
+>OS YY SEMN/VESSEL-ALDEBARAN REG LIBERIA
+>RM*GRACE/VSL/ALDEBARAN
+>RM*GRACE/VSR/LIBERIA
+
+>AP ATH 0030210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72;OS YY ATH 0030210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72
+ is replaced by
+>AP ATH +30 210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72
+
+>OS YY AFTER OFFICE HOURS TELEPHONE ATHENS GREECE 6945751724
+ is replaced by
+>OS YY ATH AFTER OFFICE HOURS TELEPHONE ATHENS GREECE GR30 6945751724 
+
+>TK TL15SEP
+>OP 19SEP/72
+>RU 1A HK1 ATH 07APR/RETAIN
+
+SUMMARY OF AMADEUS COMMANDS ISSUED BY THE SCRIPT
+------------------------------------------------
+
+RU 1A HK1 ATH 07APR/RETAIN
+-- search for >MIS 1A HK1 ATH
+AP ATH +30 210 9231100 GRIFFIN TRAVEL MARINE S.A. REF CHRIS Q72
+-- search for >AP ATH
+APE-CNICOLATOS@GRIFFINLOBALGROUP.COM
+-- search for >APE CNICOLATOS@GRIFFINGLOBALGROUP.COM
+SR OTHS - ATH AFTER OFFICE HOURS TELEPHONE ATHENS GREECE GR30 6945751724
+-- search for >SSR OTHS YY ATH AFTER OFFICE HOURS
+TK TL15SEP
+-- search for >TK TL
+OP 19SEP/72
+-- search for >OP ATHG42100/
+RM*GRACE/CLN/010058
+-- search for >RM *GRACE/CLN/
+RC ***G42***/CLA/FALCON
+-- search for >RC ATHG42100-W,*/CLA/ where * is anything
+RM*GRACE/SBN/6777
+-- search for >RM *GRACE/SBN/
+RC ***G42***/SBA/DEPARTMENT NAME
+-- search for >RC ATHG42100-W,*/SBA/
+RM*GRACE/VSL/ALDEBARAN
+-- search for >RM *GRACE/VSL/
+RM*GRACE/VSR/LIBERIA
+-- search for >RM *GRACE/VSR/
+OS YY OIN GR01058
+-- search for >GR01058 in OSI entries
+SRSEMN-IB/MV-<?VESSEL NAME >/REG-<?VESSEL REGISTRATION>/S<?Segment selection>
+-- search for >SSR SEMN LH for specific segment
+
+
+WARNING: SECURE FLT PASSENGER DATA REQUIRED FOR TICKETING PAX 1
+
+
+JUM/O-BOMG42100/8888GT/GS-GRIFFIN1
+----------------------------------------
+11 August 2017
+In order to participate to Amadeus reward programme, we need you to add the below line to all amadeus bookings at the time of creation and at the end to queue it to QE/ATH1A098A/77
+
+RM*AMA  30038880  // The space between AMA and the number is mandatory!　
+
+QE/ATH1A098A/77
+
+
+
+---------------------------
+
+Check for "SIMULTANEOUS CHANGES TO PNR - USE WRA/RT TO PRINT OR IGNORE" when saving
+
+Check for "WARNING: SECURE FLT PASSENGER DATA REQUIRED FOR TICKETING PAX 1" when doing QE72-RT
+
+--------------------------
+
+---------------------------
+
+
+
+FOR DISCOVERY - email from Craig Palfrey 22/1/2018
+
+Hi Chris
+
+The required RM entries we would expect for all OSM bookings would be as follows:-
+
+Clients Account code 		RM*D,AC- (code to be advised)
+Internal Department			RM*D,DEP-1CYP
+Travel booker 				RM*D,BOOKED- (OSM travel booker name)
+Vessel 						RM*D,CC1- (Vessel name) 
+Trip Purpose				RM*D,REF2-(trip purpose)
+
+
+In addition we also have the following entries that maybe required in some bookings
+
+ATP to act as credit card merchant			RM*D,FOP- (card code) – card number – expiry date 
+
+When buying a flight from 3rd party 		RM*D,CONSOL- (supplier code) –  selling fare – selling tax – ticket number or reference -  number of passengers -  payment method to charge client ; sector numbers 
+
+To stop an invoice from being auto created	RM*D,STOPINV
+ 
+
+If you need the supplier codes for the 3rd party flight scenario please let me know and we can send over the current list used in Cyprus 
+
+
+Regards
+
+
+Craig
+

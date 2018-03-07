@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D8D79D2-C181-4CAA-924A-2C68969D9F74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ATPI.TWME.GRATH.My.MyApplication</StartupObject>
+    <RootNamespace>ATPI.TWME.GRATH</RootNamespace>
+    <AssemblyName>ATPI.TWME.GRATH</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ATPI.TWME.GRATH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ATPI.TWME.GRATH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.k1aHostConstantsLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Interop.k1aHostConstantsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.k1aHostInterface, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Interop.k1aHostInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.k1aHostToolKit, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Interop.k1aHostToolKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.s1aAirlineDate, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Interop.s1aAirlineDate.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.s1aPNR, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\Interop.s1aPNR.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>Dlls\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="k1aHostConstantsLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dlls\k1aHostConstantsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.WinControls, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R1 2018\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R1 2018\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R1 2018\Bin40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R1 2018\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R1 2018\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Travelport.TravelData, Version=7.3.20.81, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AirlineNotes.vb" />
+    <Compile Include="Classes\AirlinePoints.vb" />
+    <Compile Include="Classes\Airlines.vb" />
+    <Compile Include="Classes\Airports.vb" />
+    <Compile Include="Classes\Alerts.vb" />
+    <Compile Include="Classes\GDSExisting.vb" />
+    <Compile Include="Classes\GDSNew.vb" />
+    <Compile Include="Classes\GDSNumberParser.vb" />
+    <Compile Include="Classes\GDSPax.vb" />
+    <Compile Include="Classes\GDSPnr.vb" />
+    <Compile Include="Classes\GDSSeg.vb" />
+    <Compile Include="Classes\GDSTickets.vb" />
+    <Compile Include="Classes\GDSUser.vb" />
+    <Compile Include="Classes\BackOffice.vb" />
+    <Compile Include="Classes\CloseOffEntries.vb" />
+    <Compile Include="Classes\Config.vb" />
+    <Compile Include="Classes\CRM.vb" />
+    <Compile Include="Classes\Customers.vb" />
+    <Compile Include="Classes\CustomProperties.vb" />
+    <Compile Include="Classes\ExportDataGrid.vb" />
+    <Compile Include="Classes\FrequentFlyer.vb" />
+    <Compile Include="Classes\GDS.vb" />
+    <Compile Include="Classes\GreekToLatin.vb" />
+    <Compile Include="Classes\ItnRTBDoc.vb" />
+    <Compile Include="Classes\OsmLOG.vb" />
+    <Compile Include="Classes\osmPax.vb" />
+    <Compile Include="Classes\osmVessels.vb" />
+    <Compile Include="Classes\PaxApisDB.vb" />
+    <Compile Include="Classes\PriceLookup.vb" />
+    <Compile Include="Classes\ReadPNR.vb" />
+    <Compile Include="Classes\SubDepartments.vb" />
+    <Compile Include="Classes\Ticket.vb" />
+    <Compile Include="Classes\Vessels.vb" />
+    <Compile Include="Forms\frmAdmin.Designer.vb">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCostCentre.Designer.vb">
+      <DependentUpon>frmCostCentre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCostCentre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItnMSReportDates.Designer.vb">
+      <DependentUpon>frmItnMSReportDates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItnMSReportDates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOSMAddVessel.Designer.vb">
+      <DependentUpon>frmOSMAddVessel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOSMAddVessel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOSMAgents.Designer.vb">
+      <DependentUpon>frmOSMAgents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOSMAgents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOSMLoG.Designer.vb">
+      <DependentUpon>frmOSMLoG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOSMLoG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOSMVessels.Designer.vb">
+      <DependentUpon>frmOSMVessels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOSMVessels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPNR.Designer.vb">
+      <DependentUpon>frmPNR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPNR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShowOptions.Designer.vb">
+      <DependentUpon>frmShowOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShowOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVesselForPNR.Designer.vb">
+      <DependentUpon>frmVesselForPNR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVesselForPNR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="Interfaces\IGDSPnr.vb" />
+    <Compile Include="Modules\modPNR.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmAdmin.resx">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCostCentre.resx">
+      <DependentUpon>frmCostCentre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmItnMSReportDates.resx">
+      <DependentUpon>frmItnMSReportDates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOSMAddVessel.resx">
+      <DependentUpon>frmOSMAddVessel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOSMAgents.resx">
+      <DependentUpon>frmOSMAgents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOSMLoG.resx">
+      <DependentUpon>frmOSMLoG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOSMVessels.resx">
+      <DependentUpon>frmOSMVessels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPNR.resx">
+      <DependentUpon>frmPNR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShowOptions.resx">
+      <DependentUpon>frmShowOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVesselForPNR.resx">
+      <DependentUpon>frmVesselForPNR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Griffin PNR_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="PNR Finisher.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ATPI.TWME.SP.Lib.dll" />
+    <Content Include="Dlls\Interop.k1aHostConstantsLib.dll" />
+    <Content Include="Dlls\Interop.k1aHostInterface.dll" />
+    <Content Include="Dlls\Interop.k1aHostToolKit.dll" />
+    <Content Include="Dlls\Interop.s1aAirlineDate.dll" />
+    <Content Include="Dlls\Interop.s1aPNR.dll" />
+    <Content Include="Dlls\k1aHostConstantsLib.dll" />
+    <Content Include="Forms\ATPI PNR.ico" />
+    <Content Include="Notes\Airline Points Commands.txt" />
+    <Content Include="Notes\GDS Commands.txt" />
+    <Content Include="Notes\My Notes.txt" />
+    <Content Include="Notes\PARTIAL PNR DISPLAY ELEMENT CODES.txt" />
+    <Content Include="Notes\PNR History Display Codes.txt" />
+    <Content Include="Notes\PNRFinisher.txt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Notes\SSR Docs.txt" />
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ATPI.TWME.SP.Lib\ATPI.TWME.SP.Lib.csproj">
+      <Project>{5e27be19-6ed3-43b8-991a-e1790c9838f9}</Project>
+      <Name>ATPI.TWME.SP.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

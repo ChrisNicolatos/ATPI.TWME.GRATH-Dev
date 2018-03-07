@@ -1,0 +1,137 @@
+﻿PNR HISTORY DISPLAY CODES                                                      
+ -------------------------                                                      
+                                                                                
+  A                                                                             
+ ---                                                                            
+ AB  ADDED BILLING ADDRESS ELEMENT                                              
+ AE  ADDED INDIVIDUAL SECURITY ELEMENTS                                         
+ AF  ADDED FARE ELEMENT                                                         
+ AK  ADDED SPECIAL KEYWORD ELEMENT                                              
+ AM  ADDED MAILING ADDRESS ELEMENT                                              
+ AN  ADDED NAME ELEMENT                                                         
+ AI  ADDED TRAVEL INSURANCE ELEMENT                                             
+ AO  ADDED OPTION ELEMENT                                                       
+ AP  ADDED PHONE ELEMENT                                                        
+ AQ  ADDED ADDRESS VERIFICATION ELEMENT                                         
+ AR  ADDED REMARK/CONFIDENTIAL REMARK ELEMENT                                   
+ AS  ADDED ELEMENT CONTAINING STATUS CODE (EXCEPT SSR)                          
+ AT  ADDED TICKETING ARRANGEMENT ELEMENT                                        
+ AY  ADDED TOTAL PRICE ELEMENT                                                  
+                                                                                
+  C                                                                             
+ ---                                                                            
+ CB  CHANGED BILLING ADDRESS                                                    
+ CE  CHANGED INDIVIDUAL SECURITY ELEMENTS                                       
+ CF  CHANGED FARE ELEMENTS                                                      
+ CM  CHANGED MAILING ADDRESS ELEMENT                                            
+ CN  CHANGED NAME ELEMENT                                                       
+ CO  CHANGED OPTION ELEMENT                                                     
+ CP  CHANGED PHONE ELEMENT                                                      
+ CQ  CHANGED ADDRESS VERIFICATION ELEMENT                                       
+ CR  CHANGED REMARK ELEMENT                                                     
+ CS  CHANGED STATUS CODE                                                        
+ CT  CHANGED TICKETING ARRANGEMENT ELEMENT                                      
+ CW  CHANGED WAITLIST PRIORITY                                                  
+ CY  CHANGED TOTAL PRICE ELEMENT                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+  D                                                                             
+ ---                                                                            
+ DM  DISSOLVED MARRIAGE                                                         
+                                                                                
+  E                                                                             
+ ---                                                                            
+ EA  ADDED ETR ELEMENT                                                          
+ EC  CHANGED ETR ELEMENT                                                        
+ EO  ORIGINAL ETR ELEMENT                                                       
+ EX  CANCELLED ETR ELEMENT                                                      
+                                                                                
+  F                                                                             
+ ---                                                                            
+ FA  ADDED FINANCIAL ITEM ELEMENT                                               
+ FC  CHANGED FINANCIAL ITEM ELEMENT                                             
+ FO  ORIGINAL FINANCIAL ITEM ELEMENT                                            
+ FX  CANCELLED FINANCIAL ITEM ELEMENT                                           
+                                                                                
+                                                                                
+  G                                                                             
+ ---                                                                            
+ GM  GENERATED MARRIAGE                                                         
+                                                                                
+                                                                                
+  I                                                                             
+ ---                                                                            
+ IS  INCREASE NUMBER IN PARTY                                                   
+                                                                                
+                                                                                
+  K                                                                             
+ ---                                                                            
+ KO  ORIGINAL REMARK/CONFIDENTIAL REMARK                                        
+                                                                                
+  M                                                                             
+ ---                                                                            
+ MA  ADDED MISCELLANEOUS DOCUMENT ELEMENT                                       
+ MO  ORIGINAL MISCELLANEOUS DOCUMENT ELEMENT                                    
+ MX  CANCELLED MISCELLANEOUS DOCUMENT ELEMENT                                   
+                                                                                
+  O                                                                             
+ ---                                                                            
+ OA  ADDED OSI ELEMENT                                                          
+ OB  ORIGINAL BILLING ADDRESS ELEMENT                                           
+ OD  ORIGINAL MAILING ADDRESS ELEMENT                                           
+ OE  ORIGINAL INDIVIDUAL SECURITY ELEMENTS                                      
+ OI  ORIGINAL TRAVEL INSURANCE ELEMENT                                          
+ OK  ORIGINAL KEYWORD ELEMENT                                                   
+ OM  ORIGINAL MARRIAGE                                                          
+ ON  ORIGINAL NAME                                                              
+ OO  ORIGINAL OSI ELEMENT                                                       
+ OQ  ORIGINAL OPTION ELEMET                                                     
+ OR  ORIGINAL SSR ELEMENT                                                       
+ OS  ORIGINAL ELEMENT CONTAINING STATUS CODE (EXCEPT SSR)                       
+ OP  ORIGINAL PHONE ELEMENT                                                     
+ OF  ORIGINAL FARE ELEMENT                                                      
+ OT  ORIGINAL TICKETING ARRANGEMENT ELEMENT                                     
+ OX  CANCELLED OSI ELEMENT                                                      
+ OY  ORIGINAL TOTAL PRICE ELEMENT                                               
+                                                                                
+  Q                                                                             
+ ---                                                                            
+ QO  ORIGINAL ADDRESS VERIFICATION ELEMENT                                      
+                                                                                
+                                                                                
+  S                                                                             
+ ---                                                                            
+ SA  ADDED SSR ELEMENT                                                          
+ SR  REJECTED SSR ELEMENT                                                       
+ SX  CANCELLED SSR ELEMENT                                                      
+                                                                                
+                                                                                
+  T                                                                             
+ ---                                                                            
+ TA  ADDED ATTACHMENT ELEMENT                                                   
+ TO  ORIGINAL ATTACHMENT ELEMENT                                                
+ TX  CANCELLED ATTACHMENT ELEMENT                                               
+                                                                                
+                                                                                
+                                                                                
+  X                                                                             
+ ---                                                                            
+ XB  CANCELLED BILLING ADDRESS ELEMENT                                          
+ XE  CANCELLED INDIVIDUAL SECURITY ELEMENT                                      
+ XF  CANCELLED FARE ELEMENT                                                     
+ XI  CANCELLED TRAVEL INSURANCE ELEMENT                                         
+ XK  CANCELLED SPECIAL KEYWORDS ELEMENT                                         
+ XM  CANCELLED MAILING ADDRESS ELEMENT                                          
+ XN  CANCELLED NAME ELEMENT                                                     
+ XO  CANCELLED OPTION ELEMENT                                                   
+ XP  CANCELLED PHONE ELEMENT                                                    
+ XQ  CANCELLED VERIFICATION ADDRESS ELEMENT                                     
+ XR  CANCELLED REMARK/CONFIDENTIAL REMARKS ELEMENT                              
+ XS  CANCELLED ELEMENT CONTAINING STATUS CODE (EXCEPT SSR)                      
+ XT  CANCELLED TICKETING ARRANGEMENT ELEMENTS                                   
+ XY  CANCELLED TOTAL PRICE ELEMENT                                              
+                                                                                
+                                                                                
+                                                                                

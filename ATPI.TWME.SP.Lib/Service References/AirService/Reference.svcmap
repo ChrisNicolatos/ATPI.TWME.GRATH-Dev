@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e5dd25bf-7d8a-4d7d-9837-141bee0e8f09" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\TP\TFS\AFMESA_Solutions\Solutions\Dnata.DFO\ATPI.TWME.SP.Lib\UapiWSDLs\air_v37_0\Air.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AirService.wsdl" MetadataType="Wsdl" ID="8b729259-37b7-4fc3-a944-7488f8f7bee9" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/air_v37_0/Air.wsdl" />
+    <MetadataFile FileName="AirReqRsp.xsd" MetadataType="Schema" ID="af2b3df0-2973-4adf-9121-643422ebd9d1" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/air_v37_0/AirReqRsp.xsd" />
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="e0c5f68c-e074-45ce-ac94-efe32fc3bf5a" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="AirService1.wsdl" MetadataType="Wsdl" ID="90bb1778-12cb-4c26-a6d2-dddbe494b22c" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/air_v37_0/AirAbstract.wsdl" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="d6731db9-c094-4754-8f1b-e306f5d17833" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/air_v37_0/Air.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="945dc3c9-5b8c-4243-aaf3-ee62bee062c0" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/common_v37_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="5a44013c-0fd4-4f2b-93b4-19d78fa29cac" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/common_v37_0/Common.xsd" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="b0f17a31-9d5e-4239-bb99-d999ad2fb036" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/rail_v37_0/Rail.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

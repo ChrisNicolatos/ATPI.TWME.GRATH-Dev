@@ -1,0 +1,85 @@
+﻿From Amadeus JGD/C
+------------------
+AmadeusPCC
+AmadeusUser
+
+Static Config File
+\\192.168.102.223\Common\Click-Once Applications\PNR Finisher ATH\Config\PNRFinisher.txt
+----------------------------------------------------------------------------------------
+DataSourceACC=192.168.101.35|192.168.101.35
+DataCatalogACC=TravelForceCosmos|TravelForceCosmos
+DataUserNameACC=AmadeusReports|AmadeusReports
+DataUserPasswordACC=AmadeusReports|AmadeusReports
+DataCatalogPNR=AmadeusReports|AmadeusReports
+DataSourcePNR=192.168.101.35|192.168.101.35
+DataUserNamePNR=AmadeusReports|AmadeusReports
+DataUserPasswordPNR=AmadeusReports|AmadeusReports
+
+Database PCC
+AmadeusReports.dbo.PNRFinisherPCC - Key is AmadeusPCC
+-----------------------------------------------------
+OfficePCC=ATHG42100|750B
+OfficeCityCode=ATH|ATH
+CountryCode=GR|GR
+CityName=ATHENS|ATHENS
+AOHPhone=2109231100|2109231100
+Phone=2109231100|2109231100
+OfficeName=ATPI Griffinstone|ATPI Griffinstone
+
+Database User
+AmadeusReports.dbo.PNRFinisherUsers - Key is AmadeusPCC + AmadeusUser
+---------------------------------------------------------------------
+AgentName=CHRIS|CHRIS
+AgentQueue=72|72
+AgentOPQueue=72|72
+AgentEmail=Chris.Nicolatos@atpi.com|Chris.Nicolatos@atpi.com
+AgentID=9044CN|CN
+AirportName=0|0
+AirlineLocator=0|0
+ClassOfService=0|0
+BanElectricalEquipment=0|0
+BrazilText=0|0
+USAText=0|0
+Tickets=0|0
+PaxSegPerTkt=0|0
+ShowStopovers=0|0
+ShowTerminal=0|0
+FlyingTime=0|0
+CostCentre=0|0
+Seating=0|0
+PlainFormat=0|0
+Vessel=0|0
+
+
+TextAGT=RM *%MID%ACE/AGT/%AgentID%|DI.FT-%MID%ACE/AGT/%AgentID%
+TextAOH=SR OTHS - %CITYCODE% AFTER OFFICE HOURS TELEPHONE %CITYNAME% %AOHP%|P.%CITYCODE%T*%AOHP% AFTER OFFICE HOURS TELEPHONE %CITYNAME%
+TextAOH_ToFind=SSR OTHS YY ATH AFTER OFFICE HOURS|SSR OTHS YY ATH AFTER OFFICE HOURS
+TextAP=AP %CITYCODE%*%PHONE% %OFFICENAME% REF %AGENTNAME% Q%AGENTQ%|P.%CITYCODE%T*%PHONE% %OFFICENAME% REF %AGENTNAME% Q%AGENTQ%
+TextAPE=APE-%AGENTEMAIL%|MT.%AGENTEMAIL%
+TextTTL=TK TL|T.TAU/
+TextBBY=RM *%MID%ACE/BBY/|DI.FT-%MID%ACE/BBY/
+TextCC=RM *%MID%ACE/CC/|DI.FT-%MID%ACE/CC/
+TextCLA=RM *%MID%ACE/CLA/|DI.FT-%MID%ACE/CLA/
+TextCLN=RM *%MID%ACE/CLN/|DI.FT-%MID%ACE/CLN/
+TextCRA=RM *%MID%ACE/CRA/|DI.FT-%MID%ACE/CRA/
+TextCRN=RM *%MID%ACE/CRN/|DI.FT-%MID%ACE/CRN/
+TextDPT=RM *%MID%ACE/DPT/|DI.FT-%MID%ACE/DPT/
+TextLOS=RM *%MID%ACE/LOS/|DI.FT-%MID%ACE/LOS/
+TextMISSegmentCommand=RU 1A HK|RT.T/
+TextMISSegmentLookup=MIS 1A HK|MIS 1A HK
+TextMISSegmentText=RETAIN|RETAIN
+TextOPC=OP |RB.
+TextOPB=OP |RB.
+TextREF=RM *%MID%ACE/REF/|DI.FT-%MID%ACE/REF/
+TextOP=OP |RB.
+TextREG= REG | REG 
+TextRFT=RM *%MID%ACE/RFT/|DI.FT-%MID%ACE/RFT/
+TextSAV=RM *%MID%ACE/SAV/|DI.FT-%MID%ACE/RFT/
+TextSBA=RM *%MID%ACE/SBA/|DI.FT-%MID%ACE/SBA/
+TextSBN=RM *%MID%ACE/SBN/|DI.FT-%MID%ACE/SBN/
+TextSLP=RM *%MID%ACE/SLP/|DI.FT-%MID%ACE/SLP/
+TextVOS=OS YY SEMN/VESSEL-|SI.YY*SEMN/VESSEL-
+TextVOSI=OSI YY SEMN/VESSEL-|OSI YY SEMN/VESSEL-
+TextVSL=RM *%MID%ACE/VSL/|DI.FT-%MID%ACE/VSL/
+TextVSR=RM *%MID%ACE/VSR/|DI.FT-%MID%ACE/VSR/
+TextAMR=RM *AMA 30038880|

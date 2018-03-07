@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E27BE19-6ED3-43B8-991A-E1790C9838F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATPI.TWME.SP.Lib</RootNamespace>
+    <AssemblyName>ATPI.TWME.SP.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Travelport.HostAccess, Version=7.2.2.5, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Travelport\Smartpoint\Travelport.HostAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Travelport.TravelData, Version=7.0.1.121, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Travelport\Smartpoint\Travelport.TravelData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\SmartpointSDKFactory.cs" />
+    <Compile Include="Factory\UapiFactory.cs" />
+    <Compile Include="Host.cs" />
+    <Compile Include="Model\DFOBooking.cs" />
+    <Compile Include="Model\Enumeration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AirService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\URService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\AirService\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\AirReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\AirService.wsdl" />
+    <None Include="Service References\AirService\AirService1.wsdl" />
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirExchangeQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirExchangeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirExchangeTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirFareDisplayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirFareRulesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirMerchandisingDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirMerchandisingOfferAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirPrePayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirPriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirRefundQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirRefundRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirRepriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirRetrieveDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirUpsellSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AirVoidDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.AvailabilitySearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.EMDIssuanceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.EMDRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.FlightDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.FlightInformationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.FlightTimeTableRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.LowFareSearchAsynchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.LowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.RetrieveLowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.ScheduleSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\ATPI.TWME.SP.Lib.AirService.SeatMapRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AirService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirService\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\AbstractUniversalRecordServices.wsdl" />
+    <None Include="Service References\URService\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.AckScheduleChangeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.AirCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.AirCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.AirMerchandisingFulfillmentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.HotelCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.HotelCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.PassiveCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.PassiveCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.ProviderReservationDisplayDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.ProviderReservationDivideRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.RailCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.SavedTripCreateRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.SavedTripDeleteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.SavedTripModifyRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.SavedTripRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.SavedTripSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordHistorySearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordImportRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordModifyRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.UniversalRecordSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.VehicleCancelRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\ATPI.TWME.SP.Lib.URService.VehicleCreateReservationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\URService\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\Cruise.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\Hotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\Passive.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\UniversalRecord.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\UniversalRecordReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\URService\UniversalRecordServices.wsdl" />
+    <None Include="Service References\URService\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\air_v37_0\Air.wsdl" />
+    <None Include="UapiWSDLs\air_v37_0\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\air_v37_0\AirAbstract.wsdl" />
+    <None Include="UapiWSDLs\air_v37_0\AirReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\air_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v29_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v29_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v29_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v32_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v32_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v33_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v33_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v33_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v35_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v35_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v35_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v37_0\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v37_0\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\common_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\cruise_v37_0\Cruise.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\cruise_v37_0\CruiseReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\cruise_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\gdsQueue_v37_0\GDSQueue.wsdl" />
+    <None Include="UapiWSDLs\gdsQueue_v37_0\GDSQueue.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\gdsQueue_v37_0\GDSQueueAbstract.wsdl" />
+    <None Include="UapiWSDLs\gdsQueue_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\hotel_v37_0\Hotel.wsdl" />
+    <None Include="UapiWSDLs\hotel_v37_0\Hotel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\hotel_v37_0\HotelAbstract.wsdl" />
+    <None Include="UapiWSDLs\hotel_v37_0\HotelReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\hotel_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\passive_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\passive_v37_0\Passive.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\rail_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\rail_v37_0\Rail.wsdl" />
+    <None Include="UapiWSDLs\rail_v37_0\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\rail_v37_0\RailAbstract.wsdl" />
+    <None Include="UapiWSDLs\rail_v37_0\RailReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\SessionContext_v1\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedBooking_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedBooking_v37_0\SharedBooking.wsdl" />
+    <None Include="UapiWSDLs\sharedBooking_v37_0\SharedBooking.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedBooking_v37_0\SharedBookingAbstract.wsdl" />
+    <None Include="UapiWSDLs\sharedBooking_v37_0\SharedBookingReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\shareduprofile_v1_0\UProfileShared.wsdl" />
+    <None Include="UapiWSDLs\shareduprofile_v1_0\UProfileSharedAbstract.wsdl" />
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\CustomerProfileAbstract.wsdl" />
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\SharedUProfile.wsdl" />
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\UProfileAdminReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\UProfileCoreReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\UProfileSearchReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\sharedUprofile_v20_0\UProfileShared.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\system_v32_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\system_v32_0\System.wsdl" />
+    <None Include="UapiWSDLs\system_v32_0\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\system_v32_0\SystemAbstract.wsdl" />
+    <None Include="UapiWSDLs\terminal_v33_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\terminal_v33_0\Terminal.wsdl" />
+    <None Include="UapiWSDLs\terminal_v33_0\Terminal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\terminal_v33_0\TerminalAbstract.wsdl" />
+    <None Include="UapiWSDLs\universal_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\universal_v37_0\UniversalRecord.wsdl" />
+    <None Include="UapiWSDLs\universal_v37_0\UniversalRecord.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\universal_v37_0\UniversalRecordAbstract.wsdl" />
+    <None Include="UapiWSDLs\universal_v37_0\UniversalRecordReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofileCommon_v30_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofileCommon_v30_0\UprofileCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofileCommon_v30_0\UprofileCommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofile_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofile_v37_0\UProfile.wsdl" />
+    <None Include="UapiWSDLs\uprofile_v37_0\UProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofile_v37_0\UProfileAbstract.wsdl" />
+    <None Include="UapiWSDLs\uprofile_v37_0\UProfileCoreReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\uprofile_v37_0\UProfileReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\util_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\util_v37_0\Util.wsdl" />
+    <None Include="UapiWSDLs\util_v37_0\Util.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\util_v37_0\UtilAbstract.wsdl" />
+    <None Include="UapiWSDLs\vehicle_v37_0\Kestrel.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\vehicle_v37_0\Vehicle.wsdl" />
+    <None Include="UapiWSDLs\vehicle_v37_0\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UapiWSDLs\vehicle_v37_0\VehicleAbstract.wsdl" />
+    <None Include="UapiWSDLs\vehicle_v37_0\VehicleReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AirService\" />
+    <WCFMetadataStorage Include="Service References\URService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\URService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\URService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\URService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AirService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AirService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AirService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

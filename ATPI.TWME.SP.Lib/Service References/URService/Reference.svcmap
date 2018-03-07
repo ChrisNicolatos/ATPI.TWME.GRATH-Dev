@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ccea99d0-93ac-44e4-9746-a9f827ff47c0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\TP\TFS\AFMESA_Solutions\Solutions\Dnata.DFO\ATPI.TWME.SP.Lib\UapiWSDLs\universal_v37_0\UniversalRecord.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UniversalRecord.xsd" MetadataType="Schema" ID="937d7b56-4dde-43f2-8c0b-454ce3c9243b" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/universal_v37_0/UniversalRecord.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="2e1971c5-0f59-411a-836b-590f1fb0906b" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/common_v37_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="b62218f4-b3ce-41f1-be66-78f87a641ce8" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="e9625057-4efe-40d4-955f-b04b5a62a4d9" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/air_v37_0/Air.xsd" />
+    <MetadataFile FileName="UniversalRecordReqRsp.xsd" MetadataType="Schema" ID="f40f8144-76c7-42c9-89a2-34bba17b7b51" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/universal_v37_0/UniversalRecordReqRsp.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="556be587-3c04-4522-a682-833ed7888163" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/common_v37_0/Common.xsd" />
+    <MetadataFile FileName="Cruise.xsd" MetadataType="Schema" ID="1dcd65a1-23b4-429e-890d-a8b61dc6f5df" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/cruise_v37_0/Cruise.xsd" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="01fbfa05-fac9-468e-822c-74ea68576e0e" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/rail_v37_0/Rail.xsd" />
+    <MetadataFile FileName="Vehicle.xsd" MetadataType="Schema" ID="7a74c533-dced-4591-8c37-8341aa665078" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/vehicle_v37_0/Vehicle.xsd" />
+    <MetadataFile FileName="Hotel.xsd" MetadataType="Schema" ID="2f9d7638-1d25-4786-a764-9acf7f4cf606" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/hotel_v37_0/Hotel.xsd" />
+    <MetadataFile FileName="UniversalRecordServices.wsdl" MetadataType="Wsdl" ID="3d4f8e16-2ab3-44ed-aebf-d8abf07daf0e" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/universal_v37_0/UniversalRecord.wsdl" />
+    <MetadataFile FileName="Passive.xsd" MetadataType="Schema" ID="e82d95c0-692e-403f-b6a8-3a6606226984" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/passive_v37_0/Passive.xsd" />
+    <MetadataFile FileName="AbstractUniversalRecordServices.wsdl" MetadataType="Wsdl" ID="1c6535b8-4552-410f-b698-a6eac821f7a3" SourceId="1" SourceUrl="file:///C:/TP/TFS/AFMESA_Solutions/Solutions/Dnata.DFO/ATPI.TWME.SP.Lib/UapiWSDLs/universal_v37_0/UniversalRecordAbstract.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

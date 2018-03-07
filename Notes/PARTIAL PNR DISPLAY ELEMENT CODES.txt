@@ -1,0 +1,36 @@
+﻿ PARTIAL PNR DISPLAY ELEMENT CODES                                              
+ ---------------------------------                                              
+ CODE  ELEMENT                                                                  
+ ----  -------                                                                  
+  A    AIR SEGMENTS                                                             
+  B    INVOICE AND ITINERARY REMARKS                                            
+  C    CAR SEGMENTS                                                             
+  E    EXTENDED OWNERSHIP AGREEMENTS                                            
+  F    FARE ELEMENTS                                                            
+  G    GENERAL FACTS (INCLUDING SR, SK, OS)                                     
+  H    HOTEL SEGMENTS                                                           
+  I    ITINERARY SEGMENTS                                                       
+  J    PHONE ELEMENTS (INCLUDING AB, AM, AQ, AP)                                
+  K    TICKETING ELEMENTS                                                       
+  M    MCO AND XSB ELEMENTS                                                     
+  N    NAME ELEMENTS                                                            
+  NR   NAMES AS ORIGINALLY ENTERED IN PNR                                       
+  O    OPTION ELEMENTS (INCLUDING OP, OPQ, OPX)                                 
+  OS   SEGMENTS AND SEGMENT OWNER, WHEN THE OWNER IS NOT THE                    
+       SAME AS THE PNR'S RESPONSIBLE OFFICE.                                    
+       FOR A FLIGHT OPERATED UNDER A CODESHARE AGREEMENT, ATO/                  
+       CTO AGENTS WHO ARE CODESHARE PARTICIPANTS CAN ALSO SEE                   
+       THE OA RECORD LOCATOR.                                                   
+  P    PASSENGER INFO  (ALL EXCEPT NAME, ITINERARY AND OPTION)                  
+  R    ALL REMARKS: GENERAL, CONFIDENTIAL AND CORPORATE (RM, RC,                
+       RX)                                                                      
+  R*   CATEGORY REMARKS (WHERE * IS ANY LETTER FROM A TO Z)                     
+  RRX  CORPORATE REMARKS                                                        
+  S    KEYWORD ELEMENTS                                                         
+  T    TOUR SEGMENTS                                                            
+  TN   ACTIVE TICKET NUMBERS (FA AND FH)                                        
+  TN/H ACTIVE AND HISTORICAL TICKET NUMBERS                                     
+  W    INDIVIDUAL NAMES IN GROUP PNR WITH FULL PNR DATA                         
+  X    AUXILIARY SEGMENTS (AIR TAXI, CAR, HOTEL, TOUR, MEMO)                    
+  Y    ACCOUNTING INFORMATION                                                   
+  Z    RAIL SEGMENTS                                                         
